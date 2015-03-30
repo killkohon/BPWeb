@@ -5,6 +5,13 @@
 http://aries.apache.org/xmlns/jpa/v1.1.0 http://aries.apache.org/schemas/jpa/jpa_110.xsd 
 http://aries.apache.org/xmlns/transactions/v1.0.0 http://aries.apache.org/schemas/transaction/transactionv10.xsd"
 >
+    
+    <bean id="helloworldBean" class="com.ponder.BPWeb.ModuleA.helloWorld"/> 
     <camelContext id="BPWebCamel" xmlns="http://camel.apache.org/schema/blueprint">
+        <route id="route1">
+            <from uri="vm:/BPWeb/"/>
+            <to uri="log:BPWeblog"/>
+            <to uri="bean:helloworldBean"/>
+        </route>
     </camelContext>
 </blueprint>

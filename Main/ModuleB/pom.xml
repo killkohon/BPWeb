@@ -12,11 +12,11 @@
         <vaadin.version>7.1.11</vaadin.version>
     </properties>
     <groupId>com.ponder.BPWeb</groupId>
-    <artifactId>Entrance</artifactId>
-    <packaging>war</packaging>
+    <artifactId>ModuleB</artifactId>
+    <packaging>jar</packaging>
     <version>1.0</version>
-    <name>BPWeb:Entrance:1.0</name>
-    <url>http://BPWeb.ponder.com/Entrance</url>
+    <name>BPWeb:ModuleB:1.0</name>
+    <url>http://BPWeb.ponder.com/ModuleB</url>
     <build>
         <plugins>
             <plugin>
@@ -39,13 +39,13 @@
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
+                <artifactId>maven-jar-plugin</artifactId>
                 <version>2.3</version>
                 <configuration>
                     <archive>
                         <manifest>
                             <addClasspath>false</addClasspath>
-                            <classpathPrefix>WEB-INF/lib/</classpathPrefix>
+                            <classpathPrefix>lib/</classpathPrefix>
                         </manifest>
                         <manifestEntries>
                             <Class-Path>${project.build.finalName}.jar</Class-Path>
@@ -55,19 +55,10 @@
                             <Bundle-SymbolicName>${project.groupId}.${project.ArtifactId}</Bundle-SymbolicName>
                             <Bundle-Version>${project.version}</Bundle-Version>
                             <Bundle-Vendor>${project.groupId}</Bundle-Vendor>
-                            <Bundle-Blueprint>WEB-INF/classes/OSGI-INF/blueprint/*.xml</Bundle-Blueprint>
-                            <Bundle-Activator>com.ponder.UISystem.BPWeb.Activator</Bundle-Activator>
-                            <Export-Package>com.ponder.UISystem.BPWeb;version="1.0"</Export-Package>
+                            <Export-Package>com.ponder.BPWeb.ModuleB;version="1.0"</Export-Package>
                             <Import-Package>
-                                org.osgi.framework,org.slf4j,javax.servlet.http,org.apache.camel,
-                                org.osgi.service.blueprint.container
+                                org.osgi.framework,org.slf4j,javax.servlet.http,org.apache.camel
                             </Import-Package>
-                            <Embed-Dependency>*</Embed-Dependency>
-                            <DynamicImport-Package>*</DynamicImport-Package>
-                            <Web-ContextPath>/</Web-ContextPath>
-                            <Bundle-ClassPath>
-                                .,WEB-INF/classes
-                            </Bundle-ClassPath>
                         </manifestEntries>
                     </archive>
                 </configuration>

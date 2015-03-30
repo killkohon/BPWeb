@@ -6,18 +6,14 @@
 package com.ponder.UISystem.BPWeb;
 
 import java.io.IOException;
-import javax.naming.InitialContext;
-import javax.naming.NamingException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.apache.camel.CamelContext;
-import org.apache.camel.EndpointInject;
 import org.apache.camel.Exchange;
 import org.apache.camel.ExchangePattern;
 import org.apache.camel.ProducerTemplate;
-import org.osgi.service.blueprint.container.BlueprintContainer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -59,7 +55,17 @@ public class MainServlet extends HttpServlet {
                 response.setContentType("text/plain;charset=UTF-8");
                 response.setCharacterEncoding("UTF-8");
                 response.setHeader("Connection", "close");
-                response.getWriter().write("success!["+request.getRequestURI()+"]");
+                String content=exchange.getOut().getBody(String.class);
+                String MimeType=exchange.getOut().getHeader("MimeType", String.class);
+                if(MimeType==null){
+                    MimeType="text/html";
+                }
+                if(content==null){
+                response.getWriter().write("No handler for ["+request.getRequestURI()+"]");
+                }else{
+                    response.setContentType(MimeType);
+                    response.getWriter().write(content);
+                }
             } else {
                 response.setContentType("text/plain;charset=UTF-8");
                 response.setCharacterEncoding("UTF-8");
