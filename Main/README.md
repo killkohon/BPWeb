@@ -1,7 +1,9 @@
 
-ÏîÄ¿ËµÃ÷£º
+é¡¹ç›®è¯´æ˜Žï¼š
 
 
  	 
 
-Èç¹û¶ÔOSGI¡¢blueprint¡¢servicemix¡¢camelµÈ·½Ãæ¸ÐÐËÈ¤£¬¿ÉÒÔ²Î¿¼²©¿Íhttp://killko.iteye.com£¬Ò²»¶Ó­Í¨¹ýÓÊÏäkillko#qq.com£¨#ÖÃ»»Îª@£©ºÍÎÒ½»Á÷¡£
+å¦‚æžœå¯¹OSGIã€blueprintã€servicemixã€camelç­‰æ–¹é¢æ„Ÿå…´è¶£ï¼Œå¯ä»¥å‚è€ƒåšå®¢http://killko.iteye.com
+
+ä¹Ÿæ¬¢è¿Žé€šè¿‡é‚®ç®±killko#qq.comï¼ˆ#ç½®æ¢ä¸º@ï¼‰å’Œæˆ‘äº¤æµã€‚
