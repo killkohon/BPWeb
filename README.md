@@ -1,8 +1,7 @@
-±¾ÏîÄ¿³¢ÊÔÔÚServiceMixÖ®ÉÏ£¬Í¨¹ýÕûºÏPax Web Extender¡¢Blueprint¡¢Camel¡¢Camel-blueprint¡¢Camel-VMµÈ£¬ÊµÏÖ»ùÓÚIOCºÍÂ·ÓÉµÄ·½Ê½µÄOSGI web½â¾ö·½°¸¡£
+æœ¬é¡¹ç›®å°è¯•åœ¨ServiceMixä¹‹ä¸Šï¼Œé€šè¿‡æ•´åˆPax Web Extenderã€Blueprintã€Camelã€Camel-blueprintã€Camel-VMç­‰ï¼Œå®žçŽ°åŸºäºŽIOCå’Œè·¯ç”±çš„æ–¹å¼çš„OSGI webè§£å†³æ–¹æ¡ˆã€‚
 
-ÒòÎªÕâÖÖÐÎÊ½ºÍActorÄ£Ê½ºÜÀàËÆ£¬ËùÒÔ¿ÉÒÔÔÙ½øÒ»²½¿¼ÂÇÒýÈëAkka£¬ÊµÏÖActorÄ£Ê½µÄweb¡£
+å› ä¸ºè¿™ç§å½¢å¼å’ŒActoræ¨¡å¼å¾ˆç±»ä¼¼ï¼Œæ‰€ä»¥å¯ä»¥å†è¿›ä¸€æ­¥è€ƒè™‘å¼•å…¥Akkaï¼Œå®žçŽ°Actoræ¨¡å¼çš„webã€‚
 
+å¦‚æžœå¯¹OSGIã€blueprintã€servicemixã€camelç­‰æ–¹é¢æ„Ÿå…´è¶£ï¼Œå¯ä»¥å‚è€ƒåšå®¢http://killko.iteye.com
 
- 	 
-
-Èç¹û¶ÔOSGI¡¢blueprint¡¢servicemix¡¢camelµÈ·½Ãæ¸ÐÐËÈ¤£¬¿ÉÒÔ²Î¿¼²©¿Íhttp://killko.iteye.com£¬Ò²»¶Ó­Í¨¹ýÓÊÏäkillko#qq.com£¨#ÖÃ»»Îª@£©ºÍÎÒ½»Á÷¡£
+ä¹Ÿæ¬¢è¿Žé€šè¿‡é‚®ç®±killko#qq.comï¼ˆ#ç½®æ¢ä¸º@ï¼‰å’Œæˆ‘äº¤æµã€‚
