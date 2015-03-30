@@ -1,15 +1,15 @@
 
-ÔËĞĞ±¾ÏîÄ¿£º
+è¿è¡Œæœ¬é¡¹ç›®ï¼š
 
-   1¡¢Çëµ½http://servicemix.apache.org,ÏÂÔØservicemix£¬Ä¿Ç°½¨ÒéÏÂÔØ5.1.4 release£»
+   1ã€è¯·åˆ°http://servicemix.apache.org,ä¸‹è½½servicemixï¼Œç›®å‰å»ºè®®ä¸‹è½½5.1.4 releaseï¼›
    
-   2¡¢½âÑ¹servciemixºó£¬ÕÒµ½<servicemix path>/etc/org.apache.karaf.features.cfgÎÄ¼şÀïµÄÒ»ĞĞ¡°featuresBoot=......",°´¸ñÊ½Ìí¼Ócamel-blueprintºÍwarÁ½¸öfeature;
+   2ã€è§£å‹servciemixåï¼Œæ‰¾åˆ°<servicemix path>/etc/org.apache.karaf.features.cfgæ–‡ä»¶é‡Œçš„ä¸€è¡Œâ€œfeaturesBoot=......",æŒ‰æ ¼å¼æ·»åŠ camel-blueprintå’Œwarä¸¤ä¸ªfeature;
    
-   3¡¢½«±¾ÏîÄ¿±àÒë´ò°ü£¬µÃµ½BPWeb-1.0.jar£¬¸´ÖÆµ½<servicemix path>/deploy/ÏÂ;
- 	 
- 	 4¡¢Æô¶¯<servicemix path>/bin/servicemix (for linux)»ò<servicemix path>/bin/servicemix.bat (for windows);
- 	 
- 	 5¡¢´ıservicemixÆô¶¯Íê±Ïºó£¬ÔÚä¯ÀÀÆ÷ÉÏÊäÈëhttp://<ip>:<port>/BPWeb/
+   3ã€å°†æœ¬é¡¹ç›®ç¼–è¯‘æ‰“åŒ…ï¼Œå¾—åˆ°BPWeb-1.0.jarï¼Œå¤åˆ¶åˆ°<servicemix path>/deploy/ä¸‹;
+   
+   4ã€å¯åŠ¨<servicemix path>/bin/servicemix (for linux)æˆ–<servicemix path>/bin/servicemix.bat (for windows);
+   
+   5ã€å¾…servicemixå¯åŠ¨å®Œæ¯•åï¼Œåœ¨æµè§ˆå™¨ä¸Šè¾“å…¥http://<ip>:<port>/BPWeb/
  	 
 
-Èç¹û¶ÔOSGI¡¢blueprint¡¢servicemix¡¢camelµÈ·½Ãæ¸ĞĞËÈ¤£¬¿ÉÒÔ²Î¿¼²©¿Íhttp://killko.iteye.com£¬Ò²»¶Ó­Í¨¹ıÓÊÏäkillko#qq.com£¨#ÖÃ»»Îª@£©ºÍÎÒ½»Á÷¡£
+å¦‚æœå¯¹OSGIã€blueprintã€servicemixã€camelç­‰æ–¹é¢æ„Ÿå…´è¶£ï¼Œå¯ä»¥å‚è€ƒåšå®¢http://killko.iteye.comï¼Œä¹Ÿæ¬¢è¿é€šè¿‡é‚®ç®±killko#qq.comï¼ˆ#ç½®æ¢ä¸º@ï¼‰å’Œæˆ‘äº¤æµã€‚
