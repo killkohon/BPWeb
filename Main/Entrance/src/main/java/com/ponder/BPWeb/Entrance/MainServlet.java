@@ -35,8 +35,6 @@ public class MainServlet extends HttpServlet {
             Activator.camelContextTracker.open();
         }
     }
-
-    ;
     
 
     @Override
@@ -45,7 +43,7 @@ public class MainServlet extends HttpServlet {
             response.setContentType("text/plain;charset=UTF-8");
             response.setCharacterEncoding("UTF-8");
             response.setHeader("Connection", "close");
-            response.getWriter().write("Failure!");
+            response.getWriter().write("Failure!camel is null");
         } else {
             if (producer != null) {
                 Exchange exchange = camel.getEndpoint("vm:" + request.getRequestURI()).createExchange();

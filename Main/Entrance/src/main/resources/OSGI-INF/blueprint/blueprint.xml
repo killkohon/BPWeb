@@ -11,6 +11,10 @@ http://aries.apache.org/xmlns/transactions/v1.0.0 http://aries.apache.org/schema
             <property name="httpService" ref="HttpServiceRef"/>
         </bean>
     </service>
-    <camelContext id="BPWebCamel" xmlns="http://camel.apache.org/schema/blueprint">
+    <camelContext id="BPWebEntranceCamel" xmlns="http://camel.apache.org/schema/blueprint">
+        <route id="defaultRoute">
+            <from uri="vm:defaultHttpRequest"/>
+            <to uri="log:defaultHttpRequest"/>
+        </route>
     </camelContext>
 </blueprint>
