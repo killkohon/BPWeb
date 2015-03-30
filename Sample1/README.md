@@ -5,7 +5,7 @@
    
    2、解压servciemix后，找到<servicemix path>/etc/org.apache.karaf.features.cfg文件里的一行“featuresBoot=......",按格式添加camel-blueprint和war两个feature;
    
-   3、将本项目编译打包，得到BPWeb-1.0.jar，复制到<servicemix path>/deploy/下；
+   3、将本项目编译打包，得到BPWeb-1.0.jar，复制到<servicemix path>/deploy/下;
  	 
  	 4、启动<servicemix path>/bin/servicemix (for linux)或<servicemix path>/bin/servicemix.bat (for windows);
  	 
