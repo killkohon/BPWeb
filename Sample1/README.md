@@ -12,4 +12,6 @@
    5、待servicemix启动完毕后，在浏览器上输入http://<ip>:<port>/BPWeb/
  	 
 
-如果对OSGI、blueprint、servicemix、camel等方面感兴趣，可以参考博客http://killko.iteye.com，也欢迎通过邮箱killko#qq.com（#置换为@）和我交流。
+如果对OSGI、blueprint、servicemix、camel等方面感兴趣，可以参考博客http://killko.iteye.com
+
+也欢迎通过邮箱killko#qq.com（#置换为@）和我交流。
