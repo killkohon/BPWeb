@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.ponder.UISystem.BPWeb;
+package com.ponder.BPWeb.Entrance;
 
 import org.apache.camel.CamelContext;
 import org.osgi.framework.BundleActivator;

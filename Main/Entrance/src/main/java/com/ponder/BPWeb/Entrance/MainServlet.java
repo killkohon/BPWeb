@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.ponder.UISystem.BPWeb;
+package com.ponder.BPWeb.Entrance;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -47,22 +47,21 @@ public class MainServlet extends HttpServlet {
             response.setHeader("Connection", "close");
             response.getWriter().write("Failure!");
         } else {
-            if (producer != null) {               
-                Exchange exchange = camel.getEndpoint("vm:"+request.getRequestURI()).createExchange();
+            if (producer != null) {
+                Exchange exchange = camel.getEndpoint("vm:" + request.getRequestURI()).createExchange();
                 exchange.setPattern(ExchangePattern.InOut);             //设置为同步
+                exchange.getIn().setHeader("Response", response);
                 exchange.getIn().setBody(request);
-                producer.send("vm:"+request.getRequestURI(), exchange);
+                producer.send("vm:" + request.getRequestURI(), exchange);
                 response.setContentType("text/plain;charset=UTF-8");
                 response.setCharacterEncoding("UTF-8");
                 response.setHeader("Connection", "close");
-                String content=exchange.getOut().getBody(String.class);
-                String MimeType=exchange.getOut().getHeader("MimeType", String.class);
-                if(MimeType==null){
-                    MimeType="text/html";
-                }
-                if(content==null){
-                response.getWriter().write("No handler for ["+request.getRequestURI()+"]");
-                }else{
+                String content = exchange.getOut().getBody(String.class);
+                String MimeType = exchange.getOut().getHeader("MimeType", String.class);
+                if (content != null) {
+                    if (MimeType == null) {
+                        MimeType = "text/html";
+                    }
                     response.setContentType(MimeType);
                     response.getWriter().write(content);
                 }

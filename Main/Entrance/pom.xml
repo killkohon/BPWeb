@@ -57,10 +57,10 @@
                             <Bundle-Vendor>${project.groupId}</Bundle-Vendor>
                             <Bundle-Blueprint>WEB-INF/classes/OSGI-INF/blueprint/*.xml</Bundle-Blueprint>
                             <Bundle-Activator>com.ponder.UISystem.BPWeb.Activator</Bundle-Activator>
-                            <Export-Package>com.ponder.UISystem.BPWeb;version="1.0"</Export-Package>
+                            <Export-Package>com.ponder.BPWeb.Interface;version="1.0"</Export-Package>
                             <Import-Package>
                                 org.osgi.framework,org.slf4j,javax.servlet.http,org.apache.camel,
-                                org.osgi.service.blueprint.container
+                                org.osgi.service.http,org.osgi.service.blueprint.container
                             </Import-Package>
                             <Embed-Dependency>*</Embed-Dependency>
                             <DynamicImport-Package>*</DynamicImport-Package>
