@@ -7,5 +7,16 @@ http://aries.apache.org/xmlns/transactions/v1.0.0 http://aries.apache.org/schema
 >
     <camelContext id="BPWebCamel" xmlns="http://camel.apache.org/schema/blueprint">
         
+        <route id="route1">
+            <!--
+            这个路由只是个示例，实际的路由应该是由其它模块来设计
+            -->
+            <from uri="vm:/BPWeb/"/>
+            <to uri="log:BPWeblog"/>
+        </route>
+        <route id="route2">
+            <from uri="vm:/BPWeb/R1"/>
+            <to uri="log:R1log"/>
+        </route>
     </camelContext>
 </blueprint>

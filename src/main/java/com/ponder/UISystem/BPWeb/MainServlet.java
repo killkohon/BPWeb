@@ -51,15 +51,15 @@ public class MainServlet extends HttpServlet {
             response.setHeader("Connection", "close");
             response.getWriter().write("Failure!");
         } else {
-            if (producer != null) {
-                Exchange exchange = camel.getEndpoint("vm:BPWebMainQueue").createExchange();
+            if (producer != null) {               
+                Exchange exchange = camel.getEndpoint("vm:"+request.getRequestURI()).createExchange();
                 exchange.setPattern(ExchangePattern.InOut);             //设置为同步
                 exchange.getIn().setBody(request);
-                producer.send("vm:BPWebMainQueue", exchange);
+                producer.send("vm:"+request.getRequestURI(), exchange);
                 response.setContentType("text/plain;charset=UTF-8");
                 response.setCharacterEncoding("UTF-8");
                 response.setHeader("Connection", "close");
-                response.getWriter().write("success!");
+                response.getWriter().write("success!["+request.getRequestURI()+"]");
             } else {
                 response.setContentType("text/plain;charset=UTF-8");
                 response.setCharacterEncoding("UTF-8");
