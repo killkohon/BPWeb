@@ -9,7 +9,7 @@ http://aries.apache.org/xmlns/transactions/v1.0.0 http://aries.apache.org/schema
     <bean id="helloworldBean" class="com.ponder.BPWeb.ModuleA.helloWorld"/> 
     <camelContext id="BPWebCamel" xmlns="http://camel.apache.org/schema/blueprint">
         <route id="route1">
-            <from uri="vm:/BPWeb/"/>
+            <from uri="vm:/BPWeb/?concurrentConsumers=100"/>
             <to uri="log:BPWeblog"/>
             <to uri="bean:helloworldBean"/>
         </route>
